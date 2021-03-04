@@ -1,0 +1,10 @@
+{
+    "actions": [
+      {
+        "say": "I can help you get currency conversion rates. For example you can say: 'I would like to convert some currencies.'"
+      },
+      {
+        "listen": true
+      }
+    ]
+  }
