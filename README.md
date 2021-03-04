@@ -12,35 +12,35 @@
 6. Check out the greetings 
 7. Create your first task called “help”
 8. Put in the task samples (yes, one by one)
-| Task Name  | Sample |
+| help  | Sample |
 | ------------- | ------------- |
-| Help | I'm lost  |
-|  | I don't know what to do |
-|  | How does this work? |
-|  | What are you good for? |
-|  | How can you help? |
-|  | What do I do? |
-|  | Help |
-|  | What things can you do? |
-|  | What should I do? |
-|  | What can you do? |
+| 1 | I'm lost  |
+| 2 | I don't know what to do |
+| 3 | How does this work? |
+| 4 | What are you good for? |
+| 5 | How can you help? |
+| 6 | What do I do? |
+| 7 | Help |
+| 8 | What things can you do? |
+| 9 | What should I do? |
+| 10 | What can you do? |
 9. We will be using Rates API http://ratesapi.io/ to retrieve the currency exchange data, and have already built out a Twilio Function to fetch the data for us - https://tangerine-toad-5117.twil.io/currency
 10. Create the task action (we will do this via console, but Twilio does provide a programmatic way of doing this via Command Line Interface)
 11. Add the task samples (yes, one by one) into the samples section
-| Task Name  | Sample |
+| convert_currencies  | Sample |
 | ------------- | ------------- |
-| convert_currencies | Currency conversion |
-|  | I'd like a forex rate |
-|  | I'd like to check forex rates |
-|  | Check some currency rates for me |
-|  | Check currencies |
-|  | Convert currencies |
-|  | What is the forex rate? |
-|  | Check forex rates |
-|  | I want to check currency rate |
-|  | Can I convert currencies? |
-|  | Can you help me get a forex rate? |
-|  | I'd like to convert some currencies please |
+| 1 | Currency conversion |
+| 2 | I'd like a forex rate |
+| 3 | I'd like to check forex rates |
+| 4 | Check some currency rates for me |
+| 5 | Check currencies |
+| 6 | Convert currencies |
+| 7 | What is the forex rate? |
+| 8 | Check forex rates |
+| 9 | I want to check currency rate |
+| 10 | Can I convert currencies? |
+| 11 | Can you help me get a forex rate? |
+| 12 | I'd like to convert some currencies please |
 12. Once done, you can finally build your model!
 13. When the build is finished, you can now click on the Simulate button on the bottom right and try out your bot!
 
@@ -49,16 +49,16 @@
 1. Under Train Task, click on the Fields section, and add ‘source’ under field name, and ‘Twilio.CURRENCY’ under field type, and hit add field
 2. Add ‘target’ under field name, and ‘Twilio.CURRENCY’ under field type and hit add field
 3. Going back to samples, add samples to include Fields and Prefill to skip some of the questions
-| Task Name  | Sample |
+| convert_currencies  | Sample |
 | ------------- | ------------- |
-| convert_currencies | Convert from {source} |
-|  | Convert to {target} |
-|  | I want to convert to {target} |
-|  | I want to convert from {source} |
-|  | I want to convert {source} |
-|  | What's the exchange rate for {source}? |
-|  | I'd like to convert some {source} |
-|  | Get me exchange rate for {source} |
+| 1 | Convert from {source} |
+| 2 | Convert to {target} |
+| 3 | I want to convert to {target} |
+| 4 | I want to convert from {source} |
+| 5 | I want to convert {source} |
+| 6 | What's the exchange rate for {source}? |
+| 7 | I'd like to convert some {source} |
+| 8 | Get me exchange rate for {source} |
 4. Switching back to program task, add prefill fields in each question, and save. Completed code sample below
 5. Optionally, you can add more samples that include both source and target. This way when a user passes both field information, we can directly fetch the result.
 6. Click Build model.
@@ -70,19 +70,19 @@
 3. (already done) Update our function to cater for the *amount* field
 4. Create some samples with the *amount* field
 
-| Task Name  | Sample |
+| convert_currencies  | Sample |
 | ------------- | ------------- |
-| convert_currencies | Convert {amount} {source} to {target} |
-|  | Help me convert {amount} {source} to {target} |
-|  | Can you convert {amount} {source} to {target} for me please? |
-|  | What's exchange rate for {amount} {source} to {target}? |
-|  | Please convert {amount} {source} to {target} |
-|  | Convert from {amount} {source} to {target} |
-|  | I'd like to convert {amount} {source} to {target} |
-|  | What's the conversion for {amount} {source} to {target} |
-|  | {amount} {source} to {target} |
-|  | From {amount} {source} to {target} |
-|  | How much is {amount} {source} in {target}? |
+| 1 | Convert {amount} {source} to {target} |
+| 2 | Help me convert {amount} {source} to {target} |
+| 3 | Can you convert {amount} {source} to {target} for me please? |
+| 4 | What's exchange rate for {amount} {source} to {target}? |
+| 5 | Please convert {amount} {source} to {target} |
+| 6 | Convert from {amount} {source} to {target} |
+| 7 | I'd like to convert {amount} {source} to {target} |
+| 8 | What's the conversion for {amount} {source} to {target} |
+| 9 | {amount} {source} to {target} |
+| 10 | From {amount} {source} to {target} |
+| 11 | How much is {amount} {source} in {target}? |
 5. Rebuild our model
 6. Test it on the simulator
 
