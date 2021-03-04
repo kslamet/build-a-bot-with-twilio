@@ -10,7 +10,7 @@
 4. Under all products and services (... on the left), click on Autopilot
 5. Hit Start from scratch, and give your currency converter bot a name
 6. Check out the greetings 
-7. Create your first task called “help”
+7. Create your first task called “help” [here](https://github.com/kslamet/build-a-bot-with-twilio/blob/master/help.json)
 8. Put in the task samples (yes, one by one)
 | help  | Sample |
 | ------------- | ------------- |
@@ -25,7 +25,7 @@
 | 9 | What should I do? |
 | 10 | What can you do? |
 9. We will be using Rates API http://ratesapi.io/ to retrieve the currency exchange data, and have already built out a Twilio Function to fetch the data for us - https://tangerine-toad-5117.twil.io/currency
-10. Create the task action (we will do this via console, but Twilio does provide a programmatic way of doing this via Command Line Interface)
+10. Create the convert_currencies task (we will do this via console, but Twilio does provide a programmatic way of doing this via Command Line Interface) [here](https://github.com/kslamet/build-a-bot-with-twilio/blob/master/convert_currencies_v1.json)
 11. Add the task samples (yes, one by one) into the samples section
 
 | convert_currencies  | Sample |
@@ -61,7 +61,7 @@
 | 6 | What's the exchange rate for {source}? |
 | 7 | I'd like to convert some {source} |
 | 8 | Get me exchange rate for {source} |
-4. Switching back to program task, add prefill fields in each question, and save. Completed code sample below
+4. Switching back to program task, add prefill fields in each question, and save. Completed code sample [here](https://github.com/kslamet/build-a-bot-with-twilio/blob/master/convert_currencies_v2.json)
 5. Optionally, you can add more samples that include both source and target. This way when a user passes both field information, we can directly fetch the result.
 6. Click Build model.
 
@@ -95,7 +95,7 @@
 3. Buy a phone number from Twilio
     1. Go to All Products & Services → Phone Numbers
     2. Click Buy a number, and choose one of the US Local phone numbers which are Voice and SMS ready
-    3. Click Buy <Number>, and give it a friendly name if required
+    3. Click Buy Number, and give it a friendly name if required
 4. Voice setup
     1. In Autopilot → Channels, click into Programmable Voice and copy the link
     2. Go to All Products & Services → Phone Numbers
@@ -115,10 +115,10 @@
     2. In Autopilot → Channels, click into WhatsApp and copy the link
     3. Go to All Products & Services → Programmable Messaging
     4. Click Try it out → Try WhatsApp
-    5. Send a WhatsApp message to +14155238886 with your code: join <word1>-<word2>
+    5. Send a WhatsApp message to +14155238886 with your code: join word1-word2
     6. You can try sending a one way template, else hit Next: Try Two-Way Messaging
     7. You can try receiving and replying using Two-Way Messaging, else hit Next: Configure your Sandbox
     8. Paste the Autopilot WhatsApp link to the section “When A Message Comes In”
     9. Click Save at the bottom of the page
-    10. Try out your bot on WhatsApp! Say Hi to the WhatsApp number after typing join <word1>-<word2>.
+    10. Try out your bot on WhatsApp! Say Hi to the WhatsApp number after typing join word1-word2
 
