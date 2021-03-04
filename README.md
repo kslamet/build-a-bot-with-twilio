@@ -12,6 +12,7 @@
 6. Check out the greetings 
 7. Create your first task called “help” [here](https://github.com/kslamet/build-a-bot-with-twilio/blob/master/help.json)
 8. Put in the task samples (yes, one by one)
+
 | help  | Sample |
 | ------------- | ------------- |
 | 1 | I'm lost  |
@@ -61,6 +62,7 @@
 | 6 | What's the exchange rate for {source}? |
 | 7 | I'd like to convert some {source} |
 | 8 | Get me exchange rate for {source} |
+
 4. Switching back to program task, add prefill fields in each question, and save. Completed code sample [here](https://github.com/kslamet/build-a-bot-with-twilio/blob/master/convert_currencies_v2.json)
 5. Optionally, you can add more samples that include both source and target. This way when a user passes both field information, we can directly fetch the result.
 6. Click Build model.
@@ -85,6 +87,7 @@
 | 9 | {amount} {source} to {target} |
 | 10 | From {amount} {source} to {target} |
 | 11 | How much is {amount} {source} in {target}? |
+
 5. Rebuild our model
 6. Test it on the simulator
 
