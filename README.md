@@ -3,14 +3,14 @@
 ## Get your first bot up and running
 
 1. Sign up for a Twilio Account (It’s free!) - https://www.twilio.com/try-twilio
-2. To access the contents of this course (also free!), you can go to https://www.twiliotraining.com/users/sign_up
+2. To access the contents of this course (also free!), you can go to https://www.twiliotraining.com/users/sign_up, and search for Autopilot
 3. Open the confirmation email, and login to your new Twilio Account
     1. Twilio provides you with $15 credits for new signup, to use our channel APIs
     2. The entire process of building and testing your bot is free of charge
 4. Under all products and services (... on the left), click on Autopilot
 5. Hit Start from scratch, and give your currency converter bot a name
 6. Check out the greetings 
-7. Create your first task called “help” [here](https://github.com/kslamet/build-a-bot-with-twilio/blob/master/help.json)
+7. Create your first task called “help” [copy code here](https://github.com/kslamet/build-a-bot-with-twilio/blob/master/help.json)
 8. Put in the task samples (yes, one by one)
 
 | help  | Sample |
@@ -26,7 +26,7 @@
 | 9 | What should I do? |
 | 10 | What can you do? |
 9. We will be using Rates API http://ratesapi.io/ to retrieve the currency exchange data, and have already built out a Twilio Function to fetch the data for us - https://tangerine-toad-5117.twil.io/currency
-10. Create the convert_currencies task (we will do this via console, but Twilio does provide a programmatic way of doing this via Command Line Interface) [here](https://github.com/kslamet/build-a-bot-with-twilio/blob/master/convert_currencies_v1.json)
+10. Create the convert_currencies task [copy code here](https://github.com/kslamet/build-a-bot-with-twilio/blob/master/convert_currencies_v1.json)
 11. Add the task samples (yes, one by one) into the samples section
 
 | convert_currencies  | Sample |
@@ -66,6 +66,7 @@
 4. Switching back to program task, add prefill fields in each question, and save. Completed code sample [here](https://github.com/kslamet/build-a-bot-with-twilio/blob/master/convert_currencies_v2.json)
 5. Optionally, you can add more samples that include both source and target. This way when a user passes both field information, we can directly fetch the result.
 6. Click Build model.
+7. Click Simulate and test out your enhanced bot!
 
 ## Enhance your bot #2 - convert a specific amount
 
@@ -88,8 +89,8 @@
 | 10 | From {amount} {source} to {target} |
 | 11 | How much is {amount} {source} in {target}? |
 
-5. Rebuild our model
-6. Test it on the simulator
+5. Rebuild the model
+6. Test your further enhanced bot!
 
 ## (Optional) Connect your bot to some channels
 
@@ -105,14 +106,16 @@
     3. Go to the phone number that you just purchased
     4. Paste the link in the section “A Call Comes In”
     5. Click Save at the bottom of the page
-    6. Try out your bot on Voice! Call the phone number you just bought.
+    6. To allow calls coming in from Singapore (or your country) to Twilio, click on [this link](https://www.twilio.com/console/voice/calls/geo-permissions/low-risk) and select your country to allow receiving calls.
+    7. Try out your bot on Voice! Call the phone number you just bought.
 5. Messaging setup
     1. In Autopilot → Channels, click into Programmable Messaging and copy the link
     2. Go to All Products & Services → Phone Numbers
     3. Go to the phone number that you just purchased
     4. Paste the link in the section “A Message Comes In”
     5. Click Save at the bottom of the page
-    6. Try out your bot on SMS! Send an SMS to the phone number you just bought.
+    6. To allow SMS coming in from Singapore (or your country) to Twilio, click on [this link](https://www.twilio.com/console/voice/calls/geo-permissions/low-risk) and select your country to allow receiving SMS.
+    7. Try out your bot on SMS! Send an SMS to the phone number you just bought.
 6. WhatsApp setup
     1. We will be using Twilio’s WhatsApp Sandbox
     2. In Autopilot → Channels, click into WhatsApp and copy the link
