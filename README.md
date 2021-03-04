@@ -114,7 +114,7 @@
     3. Go to the phone number that you just purchased
     4. Paste the link in the section “A Message Comes In”
     5. Click Save at the bottom of the page
-    6. To allow SMS coming in from Singapore (or your country) to Twilio, click on [this link](https://www.twilio.com/console/voice/calls/geo-permissions/low-risk) and select your country to allow receiving SMS.
+    6. To allow SMS coming in from Singapore (or your country) to Twilio, click on [this link](https://www.twilio.com/console/sms/settings/geo-permissions) and select your country to allow receiving SMS.
     7. Try out your bot on SMS! Send an SMS to the phone number you just bought.
 6. WhatsApp setup
     1. We will be using Twilio’s WhatsApp Sandbox
