@@ -27,6 +27,7 @@
 9. We will be using Rates API http://ratesapi.io/ to retrieve the currency exchange data, and have already built out a Twilio Function to fetch the data for us - https://tangerine-toad-5117.twil.io/currency
 10. Create the task action (we will do this via console, but Twilio does provide a programmatic way of doing this via Command Line Interface)
 11. Add the task samples (yes, one by one) into the samples section
+
 | convert_currencies  | Sample |
 | ------------- | ------------- |
 | 1 | Currency conversion |
@@ -49,6 +50,7 @@
 1. Under Train Task, click on the Fields section, and add ‘source’ under field name, and ‘Twilio.CURRENCY’ under field type, and hit add field
 2. Add ‘target’ under field name, and ‘Twilio.CURRENCY’ under field type and hit add field
 3. Going back to samples, add samples to include Fields and Prefill to skip some of the questions
+
 | convert_currencies  | Sample |
 | ------------- | ------------- |
 | 1 | Convert from {source} |
